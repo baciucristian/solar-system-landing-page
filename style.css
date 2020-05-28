@@ -6,6 +6,7 @@ body {
   background-color: #121117;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  background-image: url(images/stars-background.png);
 }
 
 /* nav {
