@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
 body {
   margin: 0;
@@ -9,13 +9,6 @@ body {
   background-image: url(images/stars-background.png);
 }
 
-/* nav {
-  background-color: #1f1d2a;
-  margin-top: 3vh;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-  height: 2vh;
-} */
-
 header {
   background-color: #1f1d2a;
   display: flex;
@@ -23,17 +16,39 @@ header {
   align-items: center;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   padding: 10px 10%;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 
-.logo {
+article {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 15pt;
+  font-weight: 400;
+  margin: 5vh auto;
+}
+
+h2 {
+  font-size: 23pt;
+  font-weight: 700;
+  width: 300px;
+}
+
+img,
+p {
+  width: 100%;
+}
+
+header .logo {
   height: 100%;
   width: 50px;
   cursor: pointer;
 }
 
 .nav-list a,
-.menu-button {
+.nav-button {
   color: #edf0f1;
   text-decoration: none;
 }
@@ -55,7 +70,7 @@ header {
   color: #0088a9;
 }
 
-.menu-button {
+.nav-button {
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
@@ -64,17 +79,21 @@ header {
   transition: background-color 0.3s ease 0s;
 }
 
-.menu-button:hover {
+.nav-button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
-.title {
+.main-title {
   color: white;
   font-weight: 900;
   font-size: 60pt;
   text-align: center;
 }
 
-.title span {
+.main-title h1 {
+  margin: 0;
+}
+
+.main-title span {
   font-size: 35pt;
 }
