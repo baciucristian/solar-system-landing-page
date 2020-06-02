@@ -1,8 +1,25 @@
+.logo {
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* 
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0px 20px;
+} */
+
 .css-responsive-menu {
   width: 100%;
   background-color: #1f1d2a;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   margin-top: 1%;
@@ -23,10 +40,22 @@
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease 0s;
+  margin: 0 auto;
 }
 
 .nav-button:hover {
   background-color: rgba(0, 136, 169, 0.8);
+}
+
+.navigation-list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-list li {
+  padding-right: 15px;
+  display: inline;
 }
 
 .navigation-list li a {
@@ -37,13 +66,8 @@
   color: #0088a9;
 }
 
-.css-responsive-menu ul.navigation-list {
-  padding-left: 0;
-  margin: 0;
-}
-
-.css-responsive-menu ul.navigation-list li {
-  padding-right: 15px;
+.navigation-list li:last-child {
+  padding-right: 0;
 }
 
 .menu-filler {
@@ -59,15 +83,7 @@
   color: #edf0f1;
 }
 
-.css-responsive-menu ul.navigation-list {
-  list-style: none;
-}
-
-.css-responsive-menu ul.navigation-list li {
-  display: inline;
-}
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 879px) {
   .css-responsive-menu {
     background-color: transparent;
     display: block;
@@ -80,7 +96,7 @@
     margin-bottom: 0;
   }
 
-  .css-responsive-menu ul.navigation-list {
+  .navigation-list {
     background-color: #1f1d2a;
     border-radius: 4px;
     padding: 10px;
@@ -89,12 +105,12 @@
     margin-top: 40px;
   }
 
-  .css-responsive-menu ul.navigation-list li {
+  .navigation-list li {
     padding-right: 0;
     margin-bottom: 10px;
   }
 
-  .css-responsive-menu ul.navigation-list li:last-child {
+  .navigation-list li:last-child {
     margin-bottom: 0;
   }
 
@@ -135,11 +151,11 @@
     display: block;
   }
 
-  .css-responsive-menu ul.navigation-list {
+  .navigation-list {
     display: none;
   }
 
-  .css-responsive-menu ul.navigation-list li {
+  .navigation-list li {
     display: block;
   }
 }
