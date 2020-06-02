@@ -5,16 +5,6 @@
   margin: 0 auto;
 }
 
-/* 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  padding: 0px 20px;
-} */
-
 .css-responsive-menu {
   width: 100%;
   background-color: #1f1d2a;
@@ -86,14 +76,14 @@ nav ul li {
 @media only screen and (max-width: 879px) {
   .css-responsive-menu {
     background-color: transparent;
-    display: block;
     height: initial;
     width: initial;
     margin: 0 10px;
+    flex-flow: row wrap;
   }
 
-  .css-responsive-menu .button {
-    margin-bottom: 0;
+  .logo {
+    order: 2;
   }
 
   .navigation-list {
@@ -102,7 +92,9 @@ nav ul li {
     padding: 10px;
     margin: 0;
     width: 95.5%;
-    margin-top: 40px;
+    margin-top: 2px;
+    display: none;
+    order: 4;
   }
 
   .navigation-list li {
@@ -118,7 +110,13 @@ nav ul li {
     background-color: transparent;
   }
 
+  .nav-button {
+    margin: 0;
+    order: 3;
+  }
+
   .button {
+    margin-bottom: 0;
     float: left;
     height: 38px;
     padding: 0 30px;
@@ -134,6 +132,7 @@ nav ul li {
     border-radius: 4px;
     border: 1px solid #bbb;
     box-sizing: border-box;
+    order: 1;
   }
 
   .button:hover {
@@ -149,10 +148,6 @@ nav ul li {
 
   .css-responsive-menu input[type="checkbox"].expand-control:checked + ul.navigation-list {
     display: block;
-  }
-
-  .navigation-list {
-    display: none;
   }
 
   .navigation-list li {
