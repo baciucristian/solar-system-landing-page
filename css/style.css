@@ -9,18 +9,7 @@ body {
   background-color: #121117;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  background-image: url(images/stars-background.svg);
-}
-
-header {
-  width: 100%;
-  background-color: #1f1d2a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-  margin-top: 1%;
-  padding: 10px 0;
+  background-image: url(../images/stars-background.svg);
 }
 
 article {
@@ -57,52 +46,6 @@ footer p {
 img,
 p {
   width: 100%;
-}
-
-header nav {
-  margin: 0 60px;
-}
-
-header .logo {
-  height: 100%;
-  width: 50px;
-  cursor: pointer;
-}
-
-nav ul a,
-.nav-button {
-  color: #edf0f1;
-  text-decoration: none;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  padding: 0px 20px;
-}
-
-nav ul li a {
-  transition: color 0.3s ease 0s;
-}
-
-nav ul li a:hover {
-  color: #0088a9;
-}
-
-.nav-button {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s;
-}
-
-.nav-button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
 }
 
 .main-title {

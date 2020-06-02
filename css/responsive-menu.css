@@ -1,72 +1,144 @@
-/* v0.0.1 | http://datchung.com/css-responsive-menu/ | Licensed MIT | Built Sun Jan 25 2015 00:20:11 */
-
 .css-responsive-menu {
-  background-color: #eeeeee;
-  padding: 10px;
+  width: 100%;
+  background-color: #1f1d2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  margin-top: 1%;
+  padding: 10px 0;
+  height: 40px;
 }
+
+.navigation-list li a,
+.nav-button {
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav-button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.navigation-list li a {
+  transition: color 0.3s ease 0s;
+}
+
+.navigation-list li a:hover {
+  color: #0088a9;
+}
+
 .css-responsive-menu ul.navigation-list {
   padding-left: 0;
   margin: 0;
 }
+
 .css-responsive-menu ul.navigation-list li {
   padding-right: 15px;
 }
-.css-responsive-menu ul.navigation-list li a {
-  text-decoration: none;
-}
+
 .menu-filler {
-  background-color: #eeeeee;
+  background-color: #1f1d2a;
 }
+
 .menu-filler .css-responsive-menu {
   padding: 10px 0 10px 0;
 }
-@media (max-width: 500px) {
+
+.css-responsive-menu .expand-control {
+  display: none;
+  color: #edf0f1;
+}
+
+.css-responsive-menu ul.navigation-list {
+  list-style: none;
+}
+
+.css-responsive-menu ul.navigation-list li {
+  display: inline;
+}
+
+@media only screen and (max-width: 700px) {
   .css-responsive-menu {
     background-color: transparent;
+    display: block;
+    height: initial;
+    width: initial;
+    margin: 0 10px;
   }
+
   .css-responsive-menu .button {
     margin-bottom: 0;
   }
+
   .css-responsive-menu ul.navigation-list {
-    background-color: #eeeeee;
+    background-color: #1f1d2a;
     border-radius: 4px;
     padding: 10px;
     margin: 0;
+    width: 95.5%;
+    margin-top: 40px;
   }
+
   .css-responsive-menu ul.navigation-list li {
     padding-right: 0;
     margin-bottom: 10px;
   }
+
   .css-responsive-menu ul.navigation-list li:last-child {
     margin-bottom: 0;
   }
+
   .menu-filler {
     background-color: transparent;
   }
-}
 
-/* Core styles necessary for responsive menu. */
+  .button {
+    float: left;
+    height: 38px;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+  }
 
-.css-responsive-menu .expand-control {
-  display: none;
-}
-.css-responsive-menu ul.navigation-list {
-  list-style: none;
-}
-.css-responsive-menu ul.navigation-list li {
-  display: inline;
-}
-@media (max-width: 500px) {
+  .button:hover {
+    color: rgba(0, 136, 169, 0.8);
+    border-color: #888;
+    outline: 0;
+  }
+
   .css-responsive-menu label.expand-control {
     display: inline-block;
     cursor: pointer;
   }
+
   .css-responsive-menu input[type="checkbox"].expand-control:checked + ul.navigation-list {
     display: block;
   }
+
   .css-responsive-menu ul.navigation-list {
     display: none;
   }
+
   .css-responsive-menu ul.navigation-list li {
     display: block;
   }
